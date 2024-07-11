@@ -23,6 +23,9 @@
     .btns {
         font-size: 1.2vw;
     }
+    .pipl__wrap_mobail{
+        display: none;
+    }
 
 }
 
@@ -116,6 +119,12 @@
 }
 
 @media (max-width: 380px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        max-width: 1222px;
+        margin: 0 auto;
+    }
     .hero {
         background-image: url(./img/main_screen.png);
         height: 900px;
@@ -165,7 +174,7 @@
         font-weight: 400;
     }
     .pipl__text-info {
-        font-size: 9vw;
+        font-size: 28px;
         font-weight: 400;
         font-family: 'Merriweather', serif;
     }
@@ -188,5 +197,40 @@
         100% {
             transform: translateX(-200%);
         }
+    }
+    .pipl {
+        margin: 48px 0 34px 0;
+    }
+    .pipl__wrap{
+        display: none;
+    }
+    .pipl__wrap_mobail{
+        display: block;
+    }
+    .promo-staticGame-img{
+        width: 100%;
+    }
+    .pipl__image_mobail>img{
+        width: 100%;
+        margin: 24px 0;
+    }
+    .promo-staticGame-title{
+        font-size: 28px;
+    }
+    .promo-staticGame-list {
+        margin-top: 48px;
+    }
+    .stepUpgrade {
+        margin-top: 120px;
+    }
+    .stepUpgrade__wrap>h2{
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .stepUpgrade__wrap>span{
+        color: #3057A2;
+        margin-top: 12px;
+        font-size: 18px;
     }
 }

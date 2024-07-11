@@ -287,3 +287,113 @@ h3 {
 .stepUpgrade{
     margin-top: 200px;
 }
+
+/*  */
+#caroussel{
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+
+
+.img-caroussel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity .5s;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+.img-caroussel.active{
+    opacity: 1;
+
+}
+
+
+i{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.7);
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fa-arrow-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-position .round{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: #D9D9D9 solid 1px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.5s;
+}
+
+
+.slider-position .round.active{
+    background-color: #313131;
+    border: #313131 solid 1px;
+}
+
+
+.slider-position .round:hover{
+    background-color: #313131;
+}
+
+.slider-position .round:last-child{
+    margin: 0;
+}
+
+
+.slider-position{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.credit{
+    background-color: rgba(228, 214, 214, 0.7) ;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 200;
+    border-bottom-right-radius: 10px ;
+}
+.arrows{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+}
